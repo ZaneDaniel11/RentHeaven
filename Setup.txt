@@ -1,0 +1,6 @@
+Dotnet MVC Setup installation
+-dotnet new mvc -n MyMvcApp
+
+Dotnet EntityFrameworkCore installation
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite 
+dotnet add package Microsoft.EntityFrameworkCore.Tools

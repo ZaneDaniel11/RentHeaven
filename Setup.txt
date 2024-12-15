@@ -4,3 +4,9 @@ Dotnet MVC Setup installation
 Dotnet EntityFrameworkCore installation
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite 
 dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+for cleaning
+dotnet clean
+dotnet restore
+

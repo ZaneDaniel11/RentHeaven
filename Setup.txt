@@ -2,8 +2,9 @@ Dotnet MVC Setup installation
 -dotnet new mvc -n MyMvcApp
 
 Dotnet EntityFrameworkCore installation
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite 
-dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.6
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 8.0.6
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.6
 
 
 for cleaning

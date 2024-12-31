@@ -1,31 +1,34 @@
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Facebook.Models;
+using Microsoft.Extensions.Logging;
 
-namespace Facebook.Controllers;
 
+[Route("Home")]
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
-
+    [HttpGet]
+    [Route("")]
+    [Route("Index")]
     public IActionResult Index()
     {
-        return View();
+        return View(); // Views/Home/Index.cshtml
     }
 
-    public IActionResult Privacy()
+    [HttpGet]
+    [Route("CreateAccount")]
+    public IActionResult CreateAccount()
     {
-        return View();
+        return View(); // Views/Home/CreateAccount.cshtml
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+    // [HttpGet]
+    // [Route("Register")]
+    // public IActionResult Register()
+    // {
+    //     return View(); // Views/Home/Register.cshtml
+    // }
 }

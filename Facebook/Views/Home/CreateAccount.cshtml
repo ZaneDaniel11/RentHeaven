@@ -1,0 +1,47 @@
+@section Styles {
+    <link rel="stylesheet" href="~/css/Home/create_account-style.css" />
+}
+
+    <div class="signup-container">
+        <h1 class="fb-logo">facebook</h1>
+        <div class="signup-box">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="First name" />
+                    <input type="text" placeholder="Last name" />
+                </div>
+                <label>Birthday</label>
+                <div class="row">
+                    <select>
+                        <option>Jun</option>
+                        <!-- Add other months -->
+                    </select>
+                    <select>
+                        <option>22</option>
+                        <!-- Add other days -->
+                    </select>
+                    <select>
+                        <option>2025</option>
+                        <!-- Add other years -->
+                    </select>
+                </div>
+                <label>Gender</label>
+                <div class="row">
+                    <label><input type="radio" name="gender" /> Female</label>
+                    <label><input type="radio" name="gender" /> Male</label>
+                    <label><input type="radio" name="gender" /> Custom</label>
+                </div>
+                <input type="text" placeholder="Mobile number or email" />
+                <input type="password" placeholder="New password" />
+                <p class="terms">
+                    People who use our service may have uploaded your contact information to Facebook. Learn more.
+                    <br /><br />
+                    By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+                    You may receive SMS Notifications from us and can opt out any time.
+                </p>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>

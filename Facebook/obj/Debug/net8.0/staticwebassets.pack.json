@@ -5,8 +5,12 @@
       "PackagePath": "staticwebassets\\Facebook.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\Home\\create_account-style.css",
+      "PackagePath": "staticwebassets\\css\\Home\\create_account-style.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\Home\\index-style.css",
+      "PackagePath": "staticwebassets\\css\\Home\\index-style.css"
     },
     {
       "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\favicon.ico",

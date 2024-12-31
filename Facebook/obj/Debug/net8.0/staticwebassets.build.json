@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KUg7W7Au4PG7yaLheuZx8EF4BGt6nerJUwzqQXPDR6I=",
+  "Hash": "Bxn8f/gqchHzMFNblbAS7IXvR/6CqoCiHhvOwglez+Y=",
   "Source": "Facebook",
   "BasePath": "_content/Facebook",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Facebook.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\Home\\create_account-style.css",
       "SourceId": "Facebook",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\",
       "BasePath": "_content/Facebook",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/Home/create_account-style.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\Home\\create_account-style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\css\\Home\\index-style.css",
+      "SourceId": "Facebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\",
+      "BasePath": "_content/Facebook",
+      "RelativePath": "css/Home/index-style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home\\index-style.css"
     },
     {
       "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\SaurPage\\facebook\\wwwroot\\favicon.ico",

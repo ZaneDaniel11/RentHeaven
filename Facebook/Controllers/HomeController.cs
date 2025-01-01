@@ -19,8 +19,8 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    [Route("CreateAccount")]
-    public IActionResult CreateAccount()
+    [Route("SignUp")]
+    public IActionResult SignUp()
     {
         return View(); // Views/Home/CreateAccount.cshtml
     }

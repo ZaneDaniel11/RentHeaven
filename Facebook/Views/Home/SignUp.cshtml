@@ -1,0 +1,97 @@
+
+    
+    @section Styles {
+    <link rel="stylesheet" href="~/css/Home/SignUp-style.css?v=@DateTime.Now.Ticks" />
+}
+
+<div>
+    <a href="#" class="logo">facebook</a>
+    
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1 class="signup-title">Create a new account</h1>
+            <p class="signup-subtitle">It's quick and easy.</p>
+        </div>
+        
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Last name" required>
+                </div>
+            </div>
+            
+            <div class="birthday-section">
+                <label class="birthday-label">Birthday</label>
+                <div class="birthday-row">
+                    <select class="birthday-select" required>
+                        <option value="">Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6" selected>Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select class="birthday-select" required>
+                        <option value="">Day</option>
+                       
+                    </select>
+                    <select class="birthday-select" required>
+                        <option value="">Year</option>
+                       
+                    </select>
+                </div>
+            </div>
+            
+            <div class="gender-section">
+                <label class="gender-label">Gender</label>
+                <div class="gender-row">
+                    <label class="gender-option">
+                        <span>Female</span>
+                        <input type="radio" name="gender" value="female">
+                    </label>
+                    <label class="gender-option">
+                        <span>Male</span>
+                        <input type="radio" name="gender" value="male">
+                    </label>
+                    <label class="gender-option">
+                        <span>Custom</span>
+                        <input type="radio" name="gender" value="custom">
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Mobile number or email" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" class="form-input" placeholder="New password" required>
+            </div>
+            
+            <p class="privacy-text">
+                People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.
+            </p>
+            
+            <p class="privacy-text">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. 
+                You may receive SMS Notifications from us and can opt out any time.
+            </p>
+            
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        
+        <div class="login-link">
+            <a href="#">Already have an account?</a>
+        </div>
+    </div>
+</div>

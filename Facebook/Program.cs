@@ -1,9 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+app.UseStaticFiles(); // This enables serving files from wwwroot
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

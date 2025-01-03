@@ -49,6 +49,7 @@
 
         .form-group {
             flex: 1;
+            margin-top: 10px;
         }
 
         .form-input {

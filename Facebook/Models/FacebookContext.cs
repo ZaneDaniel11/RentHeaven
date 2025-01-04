@@ -6,6 +6,8 @@ namespace Facebook.Models;
 
 public partial class FacebookContext : DbContext
 {
+    
+    public DbSet<User> Users { get; set; }
     public FacebookContext()
     {
     }

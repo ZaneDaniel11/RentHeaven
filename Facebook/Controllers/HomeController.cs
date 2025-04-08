@@ -24,11 +24,4 @@ public class HomeController : Controller
     {
         return View(); // Views/Home/CreateAccount.cshtml
     }
-
-    // [HttpGet]
-    // [Route("Register")]
-    // public IActionResult Register()
-    // {
-    //     return View(); // Views/Home/Register.cshtml
-    // }
 }

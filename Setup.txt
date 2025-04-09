@@ -1,13 +1,17 @@
+-------------------------------------------------------------------------
 Dotnet MVC Setup installation
 -dotnet new mvc -n MyMvcApp
-
+-------------------------------------------------------------------------
 Dotnet EntityFrameworkCore installation
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.6
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 8.0.6
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.6
+-------------------------------------------------------------------------
+For Ecryption Password
+dotnet add package BCrypt.Net-Next
 
-
-for cleaning
+-------------------------------------------------------------------------
+For Cleaning
 dotnet clean
 dotnet restore
 

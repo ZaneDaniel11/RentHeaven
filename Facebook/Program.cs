@@ -1,24 +1,27 @@
+using Facebook.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
-// Add services to the container.
+
+// ✅ Register FacebookContext
+builder.Services.AddDbContext<FacebookContext>(options =>
+    options.UseSqlite("Data Source=facebook.db"));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-app.UseStaticFiles(); // This enables serving files from wwwroot
 
+app.UseStaticFiles(); // Enables serving from wwwroot
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+    app.UseHttpsRedirection(); // ✅ Only redirect in production
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

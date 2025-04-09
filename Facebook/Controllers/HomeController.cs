@@ -12,6 +12,7 @@ public class HomeController : Controller
 {
     [HttpGet]
     [Route("")]
+    
     [Route("Index")]
     public IActionResult Index()
     {

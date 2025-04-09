@@ -35,14 +35,14 @@ namespace Facebook.Models
 
         [DataType(DataType.Date)]
 
-        public string BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
 
-        public string ProfilePic { get; set; }
+        public string? ProfilePic { get; set; }
 
-        public string CoverPhoto { get; set; }
+        public string? CoverPhoto { get; set; }
 
         [MaxLength(20)]
-        public string Bio { get; set; }
+        public string? Bio { get; set; }
 
         [MaxLength(20)]
         public int MobileNumber { get; set; }

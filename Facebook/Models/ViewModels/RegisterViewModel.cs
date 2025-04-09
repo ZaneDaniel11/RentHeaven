@@ -1,6 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-
+// For password Encryption
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
 namespace Facebook.Models.ViewModels
 {

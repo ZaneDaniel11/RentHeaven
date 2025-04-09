@@ -46,7 +46,7 @@ namespace Facebook.Controllers
                     LastName = model.LastName,
                     Email = model.Email,
                     UserName = model.UserName,
-                    PasswordHash = model.Password,
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
                     Gender = model.Gender,
                     BirthDate = model.BirthDate,
                     CreatedAt = DateTime.Now,

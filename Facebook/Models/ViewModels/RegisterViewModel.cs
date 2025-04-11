@@ -17,9 +17,7 @@ namespace Facebook.Models.ViewModels
 
         [Required, EmailAddress]
         public string Email { get; set; }
-
-        [Required]
-        public string UserName { get; set; }
+        public string UserName { get; set; } = "Testing";
 
         [Required, DataType(DataType.Password)]
         public string Password { get; set; }
@@ -28,9 +26,12 @@ namespace Facebook.Models.ViewModels
         [Compare("Password", ErrorMessage = "Passwords do not match.")]
         public string ConfirmPassword { get; set; }
 
+
+        [Required]
         public string Gender { get; set; }
 
+       [Required]
         [DataType(DataType.Date)]
-        public string BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }

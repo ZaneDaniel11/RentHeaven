@@ -33,9 +33,10 @@ namespace Facebook.Models
         [Required, MaxLength(20)]
         public string Gender { get; set; }
 
+        [Required]
         [DataType(DataType.Date)]
-
         public DateTime BirthDate { get; set; }
+
 
         public string? ProfilePic { get; set; }
 

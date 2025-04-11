@@ -28,40 +28,55 @@ namespace Facebook.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Register(RegisterViewModel model)
+  [HttpPost]
+public IActionResult Register(RegisterViewModel model)
+{
+    Console.WriteLine(">>> Register POST HIT <<<");
+
+    if (ModelState.IsValid)
+
+    {
+        foreach (var modelState in ModelState)
         {
-            if (ModelState.IsValid)
+            foreach (var error in modelState.Value.Errors)
             {
-                if (_context.Users.Any(u => u.Email == model.Email))
-                {
-                    ModelState.AddModelError("Email", "Email is already Registered.");
-
-                     return View(model);
-
-                }
-                var user = new User
-                {
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    Email = model.Email,
-                    UserName = model.UserName,
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
-                    Gender = model.Gender,
-                    BirthDate = DateTime.Parse(model.BirthDate),
-                    CreatedAt = DateTime.Now,
-                    UpdatedAt = DateTime.Now
-                };
-                _context.Users.Add(user);
-                _context.SaveChanges();
-
-                return RedirectToAction("Login", "Account");
+                Console.WriteLine($"Field: {modelState.Key}, Error: {error.ErrorMessage}");
             }
-            
-              return View(model);
-
-         
         }
+        Console.WriteLine(">>> Model is valid <<<");
+
+        // Check if email already exists
+        if (_context.Users.Any(u => u.Email == model.Email))
+        {
+            ModelState.AddModelError("Email", "Email is already registered.");
+            return View(model);
+        }
+
+        var user = new User
+        {
+            FirstName = model.FirstName,
+            LastName = model.LastName,
+            Email = model.Email,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password),
+            Gender = model.Gender,
+            BirthDate = model.BirthDate,
+            CreatedAt = DateTime.Now,
+            UpdatedAt = DateTime.Now
+        };
+
+        _context.Users.Add(user);
+        _context.SaveChanges();
+
+        Console.WriteLine(">>> User saved <<<");
+
+        return RedirectToAction("Index", "Account");
+    }
+
+    Console.WriteLine(">>> Model is NOT valid <<<");
+    return View(model);
+}
+
          
     }
+  
 }

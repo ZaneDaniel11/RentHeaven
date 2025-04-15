@@ -12,6 +12,41 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+header
+{
+  height:100px ;
+  background-color: #D9D9D9;
+  width: 100%;
+  
+  
+  
+}
+
+.HeaderContainer
+{
+ padding: 30px;
+ padding-top: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.list {
+  display: flex;         /* make the list items appear in a row */
+  flex-direction: row;   /* optional, default is row */
+  gap: 2rem;             /* space between items */
+  list-style: none; 
+     /* remove bullet points */
+  
+}
+.MangeBtn
+
+{
+  display: flex;
+  
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -19,4 +54,5 @@ html {
 
 body {
   margin-bottom: 60px;
+  font-family: 'Inter';
 }

@@ -1,25 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Heaven</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/Layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Heaven.styles.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="HeaderContainer">
 
-        
+<body>
+ <header>
+    <div class="HeaderContainer">
         <div class="logoContainer">
-            <a href="">hello</a>
+            <img src="@Url.Content("~/images/logo.svg")" alt="My Image" />
+            <i>RentHeaven</i>
         </div>
-        <div >
+
+        <div>
             <ul class="list">
                 <li>Boarding House</li>
                 <li>Apartment</li>
@@ -33,9 +37,15 @@
                 <img src="" alt="test">
             </div>
         </div>
+    </div>
 
-        </div>
-    </header>
+    <!-- ✅ Input at the bottom of header -->
+    <div class="SearchInputCont">
+        <input type="text" placeholder="Search..." />
+    </div>
+</header>
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -47,4 +57,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

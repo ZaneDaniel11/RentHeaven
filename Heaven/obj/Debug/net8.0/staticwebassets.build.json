@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Vw/TreJMLEwxSlsk6ADG8LDdXjA9YHL1HIlQ1boV1c=",
+  "Hash": "urTT4440N+wzMZL8gm3TM/8f8fyv/tah8famPg3VLYo=",
   "Source": "Heaven",
   "BasePath": "_content/Heaven",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\images\\Logo.png",
+      "SourceId": "Heaven",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\",
+      "BasePath": "_content/Heaven",
+      "RelativePath": "images/Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Logo.png"
     },
     {
       "Identity": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\js\\site.js",

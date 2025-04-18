@@ -1,6 +1,12 @@
 .navbar
 {
-  height: 130px
+  height: 150px;
+  background-color: #F9F9F9;
+
+}
+.navbar a 
+{
+  font-size: 20px;
 }
 
 body

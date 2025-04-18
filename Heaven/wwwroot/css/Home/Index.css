@@ -1,0 +1,29 @@
+.ImgContainer
+{
+    width: 240px;
+    height: 213px;
+    background-color: red;
+    border-radius: 20px;
+}
+.PriceInfo
+{
+    font-size: 12px;
+}
+.Rating
+{
+    font-size: 11px;
+}
+p
+{
+    margin: 0;
+}
+.LocationInfo
+{
+    font-size: 15px;
+}
+
+.CategoryTittle
+{
+    font-size: 29px;
+    font-weight: bold;
+}

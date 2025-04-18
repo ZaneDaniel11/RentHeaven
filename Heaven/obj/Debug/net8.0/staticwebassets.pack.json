@@ -5,16 +5,28 @@
       "PackagePath": "staticwebassets\\Heaven.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\css\\Home\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\css\\Shared\\Layout.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\Layout.css"
     },
     {
       "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\images\\1.svg",
+      "PackagePath": "staticwebassets\\images\\1.svg"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\images\\Logo.png",
       "PackagePath": "staticwebassets\\images\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\images\\Logo.svg",
+      "PackagePath": "staticwebassets\\images\\Logo.svg"
     },
     {
       "Id": "C:\\Users\\Administrator\\Documents\\GitHub\\RentHeaven\\Heaven\\wwwroot\\js\\site.js",

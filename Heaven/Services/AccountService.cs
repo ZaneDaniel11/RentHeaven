@@ -1,5 +1,5 @@
 using Heaven.Models;
-using Heaven.Respositories;
+using Heaven.Repositories;
 
 namespace Heaven.Services
 {

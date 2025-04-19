@@ -21,7 +21,6 @@ namespace Heaven.Repositories
                     (@FullName, @Email, @PasswordHash, @PhoneNumber, @Bio, @CreatedAt, @IsHost)";
 
                 connection.Execute(query, user);
-
                 connection.Close();
             }
         }

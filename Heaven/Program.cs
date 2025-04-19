@@ -1,25 +1,30 @@
+using Microsoft.EntityFrameworkCore;
+using Heaven.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✅ ALL service registrations must go here:
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<RentContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .LogTo(Console.WriteLine, LogLevel.Information));
 
+// ✅ Once app is built, no more services can be added.
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ✅ Now configure the request pipeline:
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
+// ✅ Add endpoint routing AFTER the pipeline setup
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

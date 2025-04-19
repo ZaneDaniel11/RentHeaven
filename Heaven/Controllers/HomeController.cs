@@ -7,10 +7,12 @@ namespace Heaven.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly RentContext _context;
+    public HomeController(ILogger<HomeController> logger, RentContext context)
 
-    public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+        _context = context;
     }
 
     public IActionResult Index()

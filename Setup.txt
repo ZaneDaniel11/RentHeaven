@@ -1,17 +1,30 @@
 -------------------------------------------------------------------------
-Dotnet MVC Setup installation
--dotnet new mvc -n MyMvcApp
+📦 Dotnet MVC Setup Installation
 -------------------------------------------------------------------------
-Dotnet EntityFrameworkCore installation
-dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.6
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 8.0.6
-dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.6
--------------------------------------------------------------------------
-For Ecryption Password
-dotnet add package BCrypt.Net-Next
+dotnet new mvc -n RentHeaven
 
 -------------------------------------------------------------------------
-For Cleaning
+🛠 Install Dapper + SQLite + BCrypt (for password hashing)
+-------------------------------------------------------------------------
+dotnet add package Dapper
+dotnet add package System.Data.SQLite
+dotnet add package BCrypt.Net-Next
+dotnet add package System.ComponentModel.Annotations
+
+-------------------------------------------------------------------------
+📂 Folder Structure Suggestion (Dapper-Friendly)
+-------------------------------------------------------------------------
+/Controllers             ← MVC Controllers
+/Models                  ← DB Models + ViewModels
+/Repositories            ← SQL logic (Insert, Select, etc.)
+/Services                ← Business logic (User creation, login)
+/Views                   ← Razor Pages
+/wwwroot                 ← Static files (images, CSS)
+/appsettings.json        ← DB Connection (optional for production)
+
+-------------------------------------------------------------------------
+🧪 Build & Clean Project (Optional but helpful)
+-------------------------------------------------------------------------
 dotnet clean
 dotnet restore
-
+dotnet build

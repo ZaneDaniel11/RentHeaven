@@ -15,6 +15,7 @@
 
     <!-- For model validation like [Required], [EmailAddress] -->
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 
 namespace Heaven.Controllers
 {
-    [Route("[controller]")]
     public class AccountController : Controller
     {
         private readonly ILogger<AccountController> _logger;
@@ -18,16 +17,11 @@ namespace Heaven.Controllers
             return View();
         }
 
-
         public IActionResult Register()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
-        }
+    
     }
 }
